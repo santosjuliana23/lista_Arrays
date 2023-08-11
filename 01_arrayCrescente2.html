@@ -4,10 +4,17 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
-
-
+    const n1 = Number(prompt("informe um número."));
+    const n2 = Number(prompt("informe outro número."));
+    let sequencia = '';
     //PROCESSAMENTO
+    if (n1 > n2) {
+        sequencia = [ n2, n1]
+    } else {
+        sequencia = [ n1, n2]
+    }
 
+    document.write (sequencia.join(` - `))
 
     //SAÍDA
     

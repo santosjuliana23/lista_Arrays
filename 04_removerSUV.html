@@ -6,6 +6,13 @@
     //Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
 
     //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    carrosSUV.join(`, `)
+    const carro = Number(prompt(`informe qual carro deseja adicionar na lista.( 1=tiggo, 2=sportage, 3=tucson, 4=ecosport)`)) - 1;
+    carroEscolhido.push(carrosSUV.slice(carro -1 , 1))
+    if ( carro == 1 || carro == 2 || carro == 3 || carro == 4 ){
+        document.write(`lista Antiga: ${} <br> Nova Lista: ${carroEscolhido}`);
+    }
 
 
     //PROCESSAMENTO
