@@ -10,9 +10,36 @@
     //NÃO FOI DESSA VEZ... TENTE NOVAMENTE!
 
     //ENTRADA
-
+    const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const cor = prompt(`informe uma cor(verde, amarelo, azul, branco, preto, marrom, cinza)`);
+    const n1 =  Math.floor(Math.random() * 7);
 
     //PROCESSAMENTO
+    if (cor == "cinza" && n1 == 6) {
+        alert(`Parabéns,tá com sorte na cor ${cor}!`);
+    }
+    else if (cor== "marrom" && n1 == 5) {
+        alert(`Parabéns,tá com sorte na cor ${cor}!`);
+    }
+    else if (cor == "preto" && n1 == 4) {
+        alert(`Parabéns,tá com sorte na cor ${cor}!`);
+    }
+    else if (cor == "branco" && n1 == 3) {
+        alert(`Parabéns,tá com sorte na cor ${cor}!`);
+    }
+    else if (cor == "verde" && n1 == 2) {
+        alert(`Parabéns,tá com sorte na cor ${cor}!`);
+    }
+    else if (cor == "amarelo" && n1 == 1) {
+        alert(`Parabéns,tá com sorte na cor ${cor}!`);
+    }
+    else if (cor == "azul" && n1 == 0) {
+        alert(`Parabéns,tá com sorte na cor ${cor}!`);
+    }
+
+    else {
+        alert(`não foi dessa vez.`);
+    }
 
 
     //SAÍDA

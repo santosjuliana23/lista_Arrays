@@ -4,15 +4,36 @@
     // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     // let carrosHatch = ["308", "Focus", "i30"];
-    
+
     //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
     //Apresente a lista final de cada tipo de veículo.
 
     //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    for (let i = 0; i < 3; i++) {
+        const carros = prompt(`informe três carros que deseja adicionar a lista.`).trim();
+        let tipodecarro = prompt(`informe o tipo de carro, suv, sedan ou hatch`).toLowerCase();
+   
 
-
-    //PROCESSAMENTO
+        //PROCESSAMENTO
+        if (tipodecarro == "suv") {
+            carrosSUV.push(carros)
+        }
+        else if (tipodecarro == "sedan") {
+            carrosSedan.push(carros)
+        }
+        else if (tipodecarro == "hatch") {
+            carrosHatch.push(carros)
+        }
+        
+ }
+        alert(`essa é a lista de carros suv ${carrosSUV}`)
+        alert(`essa é a lista de carros sedan ${carrosSedan}`)
+        alert(`essa é a lista de carros hatch ${carrosHatch}`)
+   
 
 
     //SAÍDA
